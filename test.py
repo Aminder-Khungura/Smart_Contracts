@@ -35,7 +35,7 @@ contract MyContract {
         addr.trasnfer()
         addr.send()
         # Use
-        (bool sent, bytes memory data) = addr.call{value: 100}(""); "Amount of ETH you want to send"
+        (bool sent, bytes memory data) = addr.call{value: 1 ether}(""); "Amount of ETH you want to send"
         # Use require to check if money was sent
         require(sent, "Error sending money");
 
